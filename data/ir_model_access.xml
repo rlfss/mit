@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mit_royal.mit_co_group_system_1d3bb991-1b76-438f-9e1a-bb6260cfedd6" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="mit_royal.mit_co_bc8b66fd-a974-4327-976c-380fcd9005c5"/>
+    <field name="name">mit_co group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="mit_royal.mit_co_group_user_54b170b4-c8bd-4e32-a551-50b874ffc91e" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="mit_royal.mit_co_bc8b66fd-a974-4327-976c-380fcd9005c5"/>
+    <field name="name">mit_co group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="mit_royal.mit_trade_group_syst_d5e8c589-08ce-4647-b0b5-f97489e2745f" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="mit_royal.mit_trade_f2980f15-8d50-4d00-a700-e38ee133427c"/>
+    <field name="name">mit_trade group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="mit_royal.mit_trade_group_user_9b0ff4c7-4937-4802-8fe6-bcaff3e3b98b" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="mit_royal.mit_trade_f2980f15-8d50-4d00-a700-e38ee133427c"/>
+    <field name="name">mit_trade group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="mit_royal.importer_card_group__33d5b0f9-1cd4-4978-ad9c-2a262717d097" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="mit_royal.importer_card_d05565b0-6cbf-4534-86fc-8188df31825c"/>
+    <field name="name">importer_card group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="mit_royal.importer_card_group__27684756-8ca9-40ff-9aa3-4b4fc3bd543c" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="mit_royal.importer_card_d05565b0-6cbf-4534-86fc-8188df31825c"/>
+    <field name="name">importer_card group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+  <record id="mit_royal.individual_establish_322c6b71-d081-4e85-ba9d-adcadb6afac6" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="mit_royal.individual_establish_0adaed17-e429-4733-9037-6fe4c950b489"/>
+    <field name="name">individual_establishment group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="mit_royal.individual_establish_d4496f45-fb0c-49de-bc30-71346f62bb5e" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="mit_royal.individual_establish_0adaed17-e429-4733-9037-6fe4c950b489"/>
+    <field name="name">individual_establishment group_user</field>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="False"/>
+  </record>
+</odoo>
