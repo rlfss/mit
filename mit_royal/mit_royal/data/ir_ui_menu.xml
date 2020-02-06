@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mit_royal.contacts_mit_3493e78b-f63a-406e-b25f-f1ab0691d9bb" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">MIT</field>
+    <field name="parent_id" ref="contacts.menu_contacts"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mit_royal.contacts_mit_compani_7787a0c4-b4a5-4e71-b02d-8c49c4719ea3" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mit_royal.mit_companies_80a75244-aa56-4178-b6f6-b9f4c46dbe50"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">MIT Companies</field>
+    <field name="parent_id" ref="mit_royal.contacts_mit_3493e78b-f63a-406e-b25f-f1ab0691d9bb"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mit_royal.contacts_individual__b7fc1fc4-020b-404b-9c2c-3f42a26a5266" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mit_royal.individual_establish_542dafc6-5fef-4261-822b-1a5447e1fba7"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Individual Establishment</field>
+    <field name="parent_id" ref="mit_royal.contacts_mit_3493e78b-f63a-406e-b25f-f1ab0691d9bb"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mit_royal.contacts_trade_432cda64-acd8-439d-8620-ad994efc056b" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mit_royal.trade_e648c6b3-b342-4830-afe6-168c8a0ba438"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">MIT Trade</field>
+    <field name="parent_id" ref="mit_royal.contacts_mit_3493e78b-f63a-406e-b25f-f1ab0691d9bb"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="mit_royal.contacts_importer_ca_ba7cc40e-8b82-479a-bcd1-46f026e25cef" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="mit_royal.importer_card_e81bebc1-69b5-4e50-9d05-642357eefd37"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Importer Card</field>
+    <field name="parent_id" ref="mit_royal.contacts_mit_3493e78b-f63a-406e-b25f-f1ab0691d9bb"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>

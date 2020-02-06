@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mit_royal.default_form_view_fo_afe03bfe-b33c-4203-9a57-cb2c14e980dd" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet string="mit_co">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_11798e">
+            <group name="studio_group_11798e_left"/>
+            <group name="studio_group_11798e_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Default form view for x_mit_co</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_tree_view_fo_11a56e1f-818c-491f-bfdb-ee3f21ad8280" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree string="mit_co">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Default tree view for x_mit_co</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__47456b14-4a3a-42ab-85a1-500bc2ccc4df" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//form[1]/sheet[1]" position="before">
+          <header>
+            <field widget="statusbar" options="{'clickable': '1'}" name="x_studio_importer_card" string="Importer Card" default_value="status1"/>
+          </header>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">Company Name</attribute>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]/div[1]" position="after">
+          <group name="studio_group_iXRyY">
+            <group name="studio_group_iXRyY_left">
+        </group>
+            <group name="studio_group_iXRyY_right">
+        </group>
+          </group>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_11798e_left']" position="inside">
+          <field name="x_studio_company_no" string="Company No"/>
+          <field name="x_studio_type" string="Type"/>
+          <field name="x_studio_phone" widget="phone" string="Phone"/>
+          <field name="x_studio_phone_2" string="Phone 2" widget="phone"/>
+          <field name="x_studio_mobile" string="Mobile" widget="phone"/>
+          <field name="x_studio_city" string="City"/>
+          <field name="x_studio_address" string="Address"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_11798e_right']" position="inside">
+          <field name="x_studio_capital" string="Capital"/>
+          <field name="x_studio_nationality_" string="Nationality #"/>
+          <field name="x_studio_reg_date" string="Reg Date"/>
+          <field name="x_studio_email" string="Email" widget="email"/>
+          <field name="x_studio_po_box" string="PO Box"/>
+          <field name="x_studio_zip" string="Zip"/>
+          <field name="x_studio_note" string="Note"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_7d3b68">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_form_view_fo_afe03bfe-b33c-4203-9a57-cb2c14e980dd"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Odoo Studio: Default form view for x_mit_co customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_form_view_fo_4124244f-b9bd-4ad3-bffe-82c215446c6b" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet string="mit_trade">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_0f3cd4">
+            <group name="studio_group_0f3cd4_left"/>
+            <group name="studio_group_0f3cd4_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_trade</field>
+    <field name="name">Default form view for x_mit_trade</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_tree_view_fo_31cd280e-7d0b-48a5-abf4-e132342d7042" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree string="mit_trade">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_trade</field>
+    <field name="name">Default tree view for x_mit_trade</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__fbf4a645-94bf-43df-9998-b3be9429ce81" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">Trade Name</attribute>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_0f3cd4_left']" position="inside">
+          <field name="x_studio_sequ" string="Sequ"/>
+          <field name="x_studio_trade_no" string="Trade No."/>
+          <field name="x_studio_city" string="City"/>
+          <field name="x_studio_reg_type" string="Reg Type"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_0f3cd4_right']" position="inside">
+          <field name="x_studio_owner" string="Owner"/>
+          <field name="x_studio_reg_no" string="Reg No."/>
+          <field name="x_studio_reg_date" string="Reg Date"/>
+          <field name="x_studio_status" string="Status"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_3b5a3a">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_form_view_fo_4124244f-b9bd-4ad3-bffe-82c215446c6b"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_trade</field>
+    <field name="name">Odoo Studio: Default form view for x_mit_trade customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__629a3dce-8878-4034-8e7c-9e0c6aa4aac5" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_capital"/>
+          <field name="x_studio_city"/>
+          <field name="x_studio_reg_date"/>
+          <field name="x_studio_phone"/>
+          <field name="x_studio_phone_2"/>
+          <field name="x_studio_mobile"/>
+          <field name="x_studio_email"/>
+          <field name="x_studio_company_no"/>
+          <field name="x_studio_nationality_"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_tree_view_fo_11a56e1f-818c-491f-bfdb-ee3f21ad8280"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Odoo Studio: Default tree view for x_mit_co customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__b4f52287-d949-43c4-a19e-a3ca41467c20" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="x_studio_sequ"/>
+          <field name="x_studio_owner"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_status"/>
+          <field name="x_studio_reg_date"/>
+          <field name="x_studio_reg_type"/>
+          <field name="x_studio_reg_no"/>
+          <field name="x_studio_city"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_tree_view_fo_31cd280e-7d0b-48a5-abf4-e132342d7042"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_trade</field>
+    <field name="name">Odoo Studio: Default tree view for x_mit_trade customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.default_form_view_fo_9bc957a0-bb89-454f-8520-8da0255660d9" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet string="importer_card">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_f2bacf">
+            <group name="studio_group_f2bacf_left"/>
+            <group name="studio_group_f2bacf_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_importer_card</field>
+    <field name="name">Default form view for x_importer_card</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_tree_view_fo_9554bbaa-05ca-4603-a1a4-cf1cbbd4b52c" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree string="importer_card">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_importer_card</field>
+    <field name="name">Default tree view for x_importer_card</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__6a08dab5-890e-40c8-bdda-049a60bfdab8" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">Importer Name</attribute>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_reg_no" string="Reg No."/>
+          <field name="x_studio_date_of_issue" string="Date of Issue"/>
+          <field name="x_studio_expiry_date" string="Expiry Date"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_tree_view_fo_9554bbaa-05ca-4603-a1a4-cf1cbbd4b52c"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_importer_card</field>
+    <field name="name">Odoo Studio: Default tree view for x_importer_card customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__6f63c10a-39c2-46b3-ab4f-bd449b3f08bf" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//group[@name='studio_group_f2bacf_left']" position="inside">
+          <field name="x_studio_reg_no"/>
+          <field name="x_studio_date_of_issue"/>
+          <field name="x_studio_expiry_date"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_form_view_fo_9bc957a0-bb89-454f-8520-8da0255660d9"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_importer_card</field>
+    <field name="name">Odoo Studio: Default form view for x_importer_card customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_form_view_fo_63347ef7-3023-409c-b270-dd717bf64f51" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet string="individual_establishment">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_61428b">
+            <group name="studio_group_61428b_left"/>
+            <group name="studio_group_61428b_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_individual_establishment</field>
+    <field name="name">Default form view for x_individual_establishment</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record id="mit_royal.default_tree_view_fo_5a3887d0-5ce5-4f53-bf08-fe5abe92c282" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <tree string="individual_establishment">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_individual_establishment</field>
+    <field name="name">Default tree view for x_individual_establishment</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__018fe330-818a-4779-bc6e-098adf279c01" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="x_studio_estab_no" string="Estab No."/>
+          <field name="x_studio_registration_date" string="Registration Date"/>
+          <field name="x_studio_trade_name" string="Trade Name"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">Establishment Name</attribute>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_capital" string="Capital"/>
+          <field name="x_studio_owner_nationality" string="Owner Nationality"/>
+          <field name="x_studio_national_id" string="National ID"/>
+          <field name="x_studio_status" string="Status"/>
+          <field name="x_studio_status_date" string="Status Date"/>
+          <field name="x_studio_city" string="City"/>
+          <field name="x_studio_place" string="Place"/>
+          <field name="x_studio_street" string="Street"/>
+          <field name="x_studio_active" string="Active"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_tree_view_fo_5a3887d0-5ce5-4f53-bf08-fe5abe92c282"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_individual_establishment</field>
+    <field name="name">Odoo Studio: Default tree view for x_individual_establishment customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record id="mit_royal.default_search_view__da58d3db-67d2-4274-b51c-17a4b169068b" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <search string="mit_co">
+        <field name="x_name" modifiers="{}"/>
+      </search>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Default search view for x_mit_co</field>
+    <field name="priority">16</field>
+    <field name="type">search</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__a84ac106-96e8-41ff-9fa9-fc8b78ed58f5" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_company_no"/>
+          <field name="x_studio_nationality_"/>
+          <field name="x_studio_city"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_search_view__da58d3db-67d2-4274-b51c-17a4b169068b"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Odoo Studio: Default search view for x_mit_co customization</field>
+    <field name="priority">99</field>
+    <field name="type">search</field>
+  </record>
+  <record id="mit_royal.default_kanban_view__2f1f6c30-2549-4dba-9df5-93ee286582c3" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <kanban string="mit_co">
+        <templates>
+          <t t-name="kanban-box">
+            <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+              <div class="o_kanban_card_content">
+                <field name="x_name" modifiers="{}"/>
+              </div>
+            </div>
+          </t>
+        </templates>
+      </kanban>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" eval="False"/>
+    <field name="key" eval="False"/>
+    <field name="mode">primary</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Default kanban view for x_mit_co</field>
+    <field name="priority">16</field>
+    <field name="type">kanban</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__e34eadcc-c919-4ac5-8c15-7cb9bcf86a2c" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_M07vv"/>
+        </xpath>
+        <xpath expr="//kanban[1]/templates[1]/t[1]/div[1]/div[1]" position="after">
+          <div class="oe_kanban_bottom_left" name="studio_div_529e86">
+            <field name="x_priority" widget="priority" display="full"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_kanban_view__2f1f6c30-2549-4dba-9df5-93ee286582c3"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_mit_co</field>
+    <field name="name">Odoo Studio: Default kanban view for x_mit_co customization</field>
+    <field name="priority">99</field>
+    <field name="type">kanban</field>
+  </record>
+  <record id="mit_royal.odoo_studio_default__39fafae3-39ab-450d-900a-12a45a36b59c" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//form[1]/sheet[1]/div[1]" position="after">
+          <group name="studio_group_RxfbE">
+      </group>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_61428b_left']" position="inside">
+          <field name="x_studio_trade_name"/>
+          <field name="x_studio_estab_no"/>
+          <field name="x_studio_national_id"/>
+          <field name="x_studio_registration_date"/>
+          <field name="x_studio_owner_nationality"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_61428b_right']" position="inside">
+          <field name="x_studio_capital"/>
+          <field name="x_studio_city"/>
+          <field name="x_studio_place"/>
+          <field name="x_studio_street"/>
+          <field name="x_studio_status"/>
+          <field name="x_studio_status_date"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_976d0c">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mit_royal.default_form_view_fo_63347ef7-3023-409c-b270-dd717bf64f51"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">x_individual_establishment</field>
+    <field name="name">Odoo Studio: Default form view for x_individual_establishment customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+</odoo>
